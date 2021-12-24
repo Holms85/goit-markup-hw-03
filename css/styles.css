@@ -13,6 +13,7 @@
   --tems-section-bg-color: #f5f4fa;
   --footer-address-color: #ffffff;
   --portfolio-btn-bg-color: #f5f4fa;
+  --card-margin--: 30px;
 }
 
 body {
@@ -47,6 +48,11 @@ ul {
 
 img {
   display: block;
+}
+
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .container {
@@ -84,6 +90,28 @@ img {
   padding-bottom: 25px;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-contakt {
+  display: flex;
+}
+
+.container-contakt {
+  margin-left: auto;
+}
+
+.header-logo {
+  margin-right: 93px;
+  padding: 24px 0 25px 0;
+}
+
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -95,6 +123,15 @@ img {
 
 .logo {
   color: var(--hedear-logo);
+}
+
+.header-nav {
+  display: block;
+  padding: 32px 0;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-link {
@@ -128,6 +165,10 @@ img {
   color: var(--accent-color);
 }
 
+.header-mail {
+  margin-right: 50px;
+}
+
 /* ---------------секция герой -------------------*/
 
 .hero {
@@ -155,6 +196,10 @@ img {
   background-color: var(--accent-color);
   color: var(--main-title-color);
   cursor: pointer;
+  border-radius: 4px;
+  min-width: 200px;
+  min-height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -170,9 +215,17 @@ img {
   height: 101px;
 }
 .vectors-list {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  display: flex;
+  margin-left: -30;
+  margin-top: -30;
 }
+
+.vectors-text {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 .vectors-title {
   font-weight: 700;
   font-size: 14px;
@@ -204,16 +257,24 @@ img {
   margin-bottom: 50px;
 }
 
-.about-list {
-  padding-bottom: 94px;
-}
-
 /* ----------------------наша команда---------------- */
 
 .teams {
   background-color: var(--tems-section-bg-color);
-  padding-top: 94px;
 }
+
+.teams-list {
+  display: flex;
+  margin-left: calc(-1 * var(--card-margin--));
+  margin-top: -30px;
+}
+
+.item-team {
+  flex-basis: calc(100% / 4 - var(--card-margin--));
+  margin-left: var(--card-margin--);
+  margin-top: var(--card-margin--);
+}
+
 .teams-title {
   font-weight: 700;
   font-size: 36px;
