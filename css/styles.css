@@ -376,10 +376,15 @@ section {
   padding-top: 94px;
 }
 
-.foto-header {
+.foto-list-btn {
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
+  align-items: center;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+.foto-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .foto-btn {
@@ -391,6 +396,7 @@ section {
   background-color: var(--portfolio-btn-bg-color);
   color: var(--primary-text-color);
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .foto-btn:hover,
