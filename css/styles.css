@@ -60,7 +60,7 @@ section {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .visually-hidden {
@@ -89,7 +89,7 @@ section {
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+header .container {
   display: flex;
   align-items: center;
 }
@@ -164,7 +164,7 @@ section {
   color: var(--accent-color);
 }
 
-.header-mail {
+.heder-item-mail {
   margin-right: 50px;
 }
 
@@ -184,6 +184,9 @@ section {
   text-transform: uppercase;
   margin-bottom: 30px;
   color: var(--main-title-color);
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 696px;
 }
 
 .hero-btn {
@@ -216,11 +219,13 @@ section {
 }
 .vectors-list {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.vectors-text:not(:last-child) {
+.vectors-item {
+  width: 270px;
+}
+
+.vectors-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -263,6 +268,10 @@ section {
   padding-bottom: 94px;
 }
 
+.about-photos {
+  width: 370px;
+}
+
 .about-photos:not(:last-child) {
   margin-right: 30px;
 }
@@ -270,7 +279,6 @@ section {
 /* ----------------------наша команда---------------- */
 
 .teams {
-  display: flex;
   background-color: var(--tems-section-bg-color);
 }
 
@@ -298,14 +306,12 @@ section {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 10px;
-  text-align: center;
 }
 .teams-profession {
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  text-align: center;
 }
 
 .teams-thumb {
@@ -315,7 +321,8 @@ section {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding: 30px 59px 30px 60px;
+  padding: 30px 30px;
+  text-align: center;
 }
 
 /* ---------------футер------------------------- */
@@ -374,16 +381,17 @@ section {
 
 .foto {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .foto-list-btn {
   display: flex;
   align-items: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
-.foto-item:not(:last-child) {
+.foto-item-btn:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -403,6 +411,31 @@ section {
 .foto-btn:focus {
   background-color: var(--accent-color);
   color: var(--main-title-color);
+}
+
+.foto-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.foto-item > a > img {
+  display: block;
+}
+
+.foto-item {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.foto-thumb {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .foto-title {
